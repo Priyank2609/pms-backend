@@ -25,7 +25,7 @@ app.use(cookieParser())
 
 
 const corUrl = {
-  origin: ' https://frontend-2z9bzc3a3-priyank2609s-projects.vercel.app',
+  origin: 'https://frontend-jvb37lk3z-priyank2609s-projects.vercel.app',
   credentials: true
 }
 app.use(cors(corUrl))
