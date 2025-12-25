@@ -3,10 +3,10 @@ const jwt = require('jsonwebtoken')
 module.exports.protect = (req, res, next) => {
   try {
     let token
-    // console.log(req.cookies);
+    console.log(req.cookies);
 
     token = req.cookies.JWT_Token
-    // console.log(token);
+    console.log(token);
 
     if (!token) {
       return res.status(401).json({ message: 'Not authorized, no token provided' });

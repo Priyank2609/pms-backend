@@ -1,5 +1,6 @@
 module.exports.authRoles = (roles) => {
   return (req, res, next) => {
+    console.log("req-----------", req)
     if (!req.user) {
       return res.status(403).json({ message: "Not Authorized" })
     }
